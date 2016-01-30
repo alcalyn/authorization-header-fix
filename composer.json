@@ -1,0 +1,23 @@
+{
+    "name":         "alcalyn/authorization-header-fix",
+    "license":      "MIT",
+    "type":         "library",
+    "description":  "Simple listener that restore Authorization header in a Symfony Request under Apache.",
+    "homepage":     "https://github.com/alcalyn/authorization-header-fix",
+    "keywords":     ["php", "symfony", "apache"],
+    "authors": [
+        {
+            "name": "Julien Maulny",
+            "email": "doubjulien@hotmail.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alcalyn\\AuthorizationHeaderFix\\": "src"
+        }
+    }
+}
