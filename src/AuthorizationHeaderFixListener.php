@@ -30,7 +30,11 @@ class AuthorizationHeaderFixListener
     public function fixHeaderBag(HeaderBag $headers)
     {
         if (!$headers->has('Authorization')) {
-            $headers->set('Authorization', $this->getAuthorizationHeader());
+            $authorizationHeader = $this->getAuthorizationHeader();
+
+            if (null !== $authorizationHeader) {
+                $headers->set('Authorization', $authorizationHeader);
+            }
         }
     }
 
